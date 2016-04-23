@@ -1,0 +1,94 @@
+@import 'colors';
+
+$footer-height: 110px;
+$footer-font-size: 14px;
+$footer-phone-font-size: 18px;
+$footer-line-height: $footer-font-size * 1.5;
+$footer-text-padding: $footer-font-size * 1.3;
+$footer-social-padding: 30px;
+$social-button-width: 30px;
+$social-button-height: 30px;
+$social-button-margin: 15px;
+$vk-image: url(../images/social/vk.png);
+$vk-hover-image: url(../images/social/vk-active.png);
+$facebook-image: url(../images/social/facebook.png);
+$facebook-hover-image: url(../images/social/facebook-active.png);
+$twitter-image: url(../images/social/twitter.png);
+$twitter-hover-image: url(../images/social/twitter-active.png);
+$instagram-image: url(../images/social/instagram.png);
+$instagram-hover-image: url(../images/social/instagram-active.png);
+
+.footer {
+  background-color: $theme-color-cyan;
+  color: white;
+  height: $footer-height;
+  
+  .footer-credits, .footer-info {
+    font-family: CirceRegular, sans-serif;
+    font-size: $footer-font-size;
+    line-height: $footer-line-height;
+    padding: $footer-text-padding 0;
+  }
+  
+  .footer-credits {
+    text-align: left;
+  }
+  
+  .footer-info {
+    text-align: right;
+    
+    .footer-phone {
+      font-size: $footer-phone-font-size;
+      font-weight: bold;
+    }
+  }
+  
+  .footer-social {
+    padding-top: $footer-social-padding;
+    text-align: center;
+    
+    .social-button {
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: $social-button-height;
+      margin: 0 $social-button-margin;
+      width: $social-button-width;
+      
+      &.vk {
+        background-image: $vk-image;
+        
+        &:hover,
+        &:focus {
+          background-image: $vk-hover-image;
+        }
+      }
+      
+      &.facebook {
+        background-image: $facebook-image;
+        
+        &:hover,
+        &:focus {
+          background-image: $facebook-hover-image;
+        }
+      }
+      
+      &.twitter {
+        background-image: $twitter-image;
+        
+        &:hover,
+        &:focus {
+          background-image: $twitter-hover-image;
+        }
+      }
+      
+      &.instagram {
+        background-image: $instagram-image;
+        
+        &:hover,
+        &:focus {
+          background-image: $instagram-hover-image;
+        }
+      }
+    }
+  }
+}
