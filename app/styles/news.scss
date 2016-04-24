@@ -1,0 +1,153 @@
+//colors
+@import 'fonts';
+
+$white: #fff;
+$color_tuatara_approx: #373737;
+$color_chicago_approx: #595959;
+$black: #000;
+$color_gold_approx: #fdd400;
+$department_news_title_font_size: 24px;
+$news_time_font_size: 12px;
+$department_news_margin_bottom: 57px;
+$department_news_margin_top: 64px;
+$post_title_font_size: 16px;
+$post_content_font_size: 14px;
+
+.row {
+    margin-left: -15px;
+    margin-right: -45px;
+}
+
+.time {
+	color: $color_tuatara_approx;
+	font-family: $circe-extrabold-path;
+	text-decoration: underline;
+	font-style: normal;
+	position: relative;
+	font-size: $news_time_font_size;
+	font-weight: 400;
+	display: block;
+	margin-bottom: 19px;
+}
+
+.department-news {
+  font-family: CirceExtraBold;
+	font-size: $department_news_title_font_size;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-style: normal;
+	margin-bottom: $department_news_margin_bottom;
+  margin-top: $department_news_margin_top;
+	display: block;
+}
+.gap {
+	margin-left: 13px;
+}
+
+.post-title {
+	color: $color_tuatara_approx;
+	font-family: $circe-regular-path;
+	font-size: $post_title_font_size;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 17px;
+}
+.post-content {
+	font-family: $circe-regular-path;
+	font-size: $post_content_font_size;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.post-title-inside-post {
+	font-weight: bold;
+	color: $black;
+	position: relative;
+	padding: 15px;
+	padding-left: 0;
+}
+
+.news-dirs {
+	margin-bottom: 70px;
+}
+
+.news-dir {
+	font-size: 20px;
+	text-transform: uppercase;
+	display: inline;
+}
+.news-dir-a {
+	text-decoration: none;
+}
+.share {
+	display: inline;
+	margin-top: 50px !important;
+	.fa {
+		display: inline;
+		margin: 10px;
+		color: $color_chicago_approx;
+		&:hover {
+			cursor: pointer;
+			color: $color_gold_approx;
+		}
+	}
+	.no-hover:hover {
+		cursor: default;
+		color: $color_chicago_approx;
+	}
+}
+.post {
+	display: inline;
+}
+
+.post-info {
+	margin: 30px;
+}
+.post-img {
+	width: 440px;
+	height: 270px;
+	padding-bottom: 21px;
+	&:hover {
+		filter: brightness(50%);
+		cursor: pointer;
+	}
+}
+.full-post-img {
+	width: 940px;
+	height: 400px;
+}
+
+.panel {
+	border: 0;
+	margin-bottom: 55px;
+	width: 440px;
+}
+.custom-pagination {
+	border-top: 1px solid $color_chicago_approx;
+	padding-top: 10px;
+	padding-top-display: inline;
+	text-align: center;
+	li {
+    a {
+    		text-decoration: none;
+    		color: $color_chicago_approx;
+    		color-display: inline;
+    		&:hover {
+    			padding: 10px;
+    			border-top: 3px solid $color_gold_approx;
+    		}
+    	}
+    }
+}
+ul {
+	display: inline !important;
+}
+
+.active-page {
+	padding: 10px;
+	border-top: 3px solid $color_gold_approx;
+	color: $color_gold_approx;
+}
+a h4 {
+	font-weight: bold;
+}

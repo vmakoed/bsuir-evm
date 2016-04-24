@@ -1,0 +1,32 @@
+.container
+  .row
+    .news-dirs
+      h1.department-news.post 
+        = "Новости кафедры"
+      div style=("border-left:2px solid #000; display: inline; margin: 5px;")
+      a.news-dir-a href="#" ng-click="blog.selectTab('blog')" 
+      h1.news-dir 
+        = "К списку новостей"
+      div style=("border-left:2px solid #000; display: inline; margin: 5px;")
+      a.news-dir-a href="#" 
+      h1.news-dir 
+        = "К следующей"
+      div style=("border-left:2px solid #000; display: inline; margin: 5px;")
+      a.news-dir-a href="#" 
+      h1.news-dir 
+        = "К предыдущей"
+    i.time  
+      = "{{oneNews.createdAt}}"
+    h3.post-title-inside-post  
+      = "{{oneNews.title}}"
+    br
+    img.full-post-img alt=("Cinque Terre") ng-src="{{oneNews.img}}" 
+    h5.post-content  
+      = "{{oneNews.content}}"
+    .share
+      i.fa.fa-share.fa-lg.no-hover aria-hidden="true"  
+        = "&nbsp;Поделиться новостью в соцсетях"
+      i.fa.fa-facebook.fa-lg aria-hidden="true"
+      i.fa.fa-twitter.fa-lg aria-hidden="true"
+      i.fa.fa-vk.fa-lg aria-hidden="true"
+      i.fa.fa-instagram.fa-lg aria-hidden="true"
