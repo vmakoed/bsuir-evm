@@ -1,0 +1,86 @@
+@import 'fonts';
+@import 'colors';
+
+$announcements_margin_bottom: 57px;
+$announcements_margin_top: 64px;
+$announcements_title_font_size: 23px;
+$announcement_time_font_size: 12px;
+
+.announcements-background {
+  background-color: #eef1f5;
+}
+
+.announcements {
+  font-family: $circe-extrabold-path, "CirceExtraBold";
+	font-size: $announcements_title_font_size;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-style: normal;
+	margin-bottom: $announcements_margin_bottom;
+  margin-top: $announcements_margin_top;
+	display: block;
+}
+
+.announcements-panel {
+  width: 940px;
+  height: auto;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #2ab4c0;
+}
+
+.announcement-panel-content {
+  padding: 30px;
+}
+
+.announcement-time {
+  color: $font-color-primary;
+	border-bottom: 2px solid #2ab4c0;
+  padding-bottom: 3px;
+	font-style: normal;
+	position: relative;
+	font-size: $announcement_time_font_size;
+	font-weight: 400;
+	display: inline-block;
+	margin-bottom: 19px;
+}
+
+.announcement-content {
+  color: $font-color-primary;
+}
+
+.announcement-comments-count-circle {
+  width: 21px;
+  height: 21px;
+  border: 1px solid #b9c1d0;
+  border-radius: 50%;
+  font-size: 11px;
+  color: #b9c1d0;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.announcement-table {
+  color: $black;
+  margin-top: 20px;
+
+  table > thead > tr > th {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-bottom: 0;
+    background-color: #eef1f5;
+  }
+  table > tbody > tr > td {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 35px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 0;
+  }
+}
