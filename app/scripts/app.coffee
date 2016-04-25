@@ -25,5 +25,8 @@ angular
       .when '/announcements',
         templateUrl: 'views/announcements/announcements.html'
         controller: 'AnnouncementsCtrl'
+      .when '/announcements/page',
+        templateUrl: 'views/announcements/announcement_page.html'
+        controller: 'AnnouncementsCtrl'
       .otherwise
         redirectTo: '/'
