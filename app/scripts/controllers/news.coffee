@@ -1,20 +1,3 @@
-# app = angular.module 'bsuir-ecm'
-#   .controller 'NewsCtrl', ->
-#       '$http'
-#       ($http) ->
-#         site = this
-#         site.news = {}
-#         $http.get('../../storage/news.json').success (data) ->
-#           site.news = data
-#
-#         site.tab = 'site'
-#
-#         site.selectTab = (setTab) ->
-#           site.tab = setTab
-#           return
-#
-#         site.isSelected = (checkTab) ->
-#           site.tab == checkTab
 'use strict'
 
 angular.module 'bsuir-ecm'
