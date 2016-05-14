@@ -3,14 +3,16 @@
 angular.module 'bsuir-ecm'
   .controller 'ProjectsCtrl', ($scope) ->
 
-    $scope.curPage = 0;
-    $scope.pageSize = 3;
+    setPagination = ($scope, list) ->
+      $scope.listLength = list.length
+      $scope.curPage = 0
+      $scope.pageSize = 3
+      
+      $scope.numberOfPages = () ->
+        Math.ceil($scope.listLength / $scope.pageSize)
 
-    $scope.numberOfPages = () ->
-      Math.ceil($scope.posts.length / $scope.pageSize)
-
-    $scope.range = (n) ->
-      new Array(n)
+      $scope.range = (n) ->
+        new Array(n)
 
     $scope.posts = [
       {
@@ -63,8 +65,10 @@ angular.module 'bsuir-ecm'
       },
     ]
 
+    setPagination($scope, $scope.posts)
+
 angular.module 'bsuir-ecm'
-  .filter 'pagination', ->
-    (input, start) ->
-      start = +start
-      input.slice(start)
+.filter 'pagination', ->
+  (input, start) ->
+    start = +start
+    input.slice(start)

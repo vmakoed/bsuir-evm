@@ -19,5 +19,8 @@ angular
       .when '/projects',
         templateUrl: 'views/projects/project-list.html'
         controller: 'ProjectsCtrl'
+      .when '/projects/:projectId',
+        templateUrl: 'views/projects/project.slim'
+        controller: 'ProjectsController'
       .otherwise
         redirectTo: '/'
