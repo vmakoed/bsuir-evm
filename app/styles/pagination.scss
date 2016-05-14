@@ -1,3 +1,4 @@
+@import "colors";
 $pagination-sprite: "../images/pagination.png";
 
 .line {
@@ -14,7 +15,7 @@ $pagination-sprite: "../images/pagination.png";
 
 .pagination {
   margin: 11px 0 120px;
-  width:100%;
+  width: 100%;
 
   font-family: CirceRegular, sans-serif;
   font-size: 14px;
