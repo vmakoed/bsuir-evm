@@ -19,11 +19,6 @@ a {
   }
 }
 
-.row {
-    margin-left: -15px;
-    margin-right: -45px;
-}
-
 .panel {
 	border: 0;
 	margin-bottom: 55px;
@@ -166,7 +161,7 @@ a {
     background-position: -44px 0;
     width: 13px;
     height: 10px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 10px;
     &:hover {
   		cursor: default;
