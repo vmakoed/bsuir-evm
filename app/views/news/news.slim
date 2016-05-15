@@ -1,0 +1,31 @@
+.container
+  .row
+    i.department-news.gap 
+      = "Новости кафедры"
+    div ng-repeat="oneNews in news | orderBy: '-id'"
+      .col-md-6
+        .panel.panel-default
+          a ng-href="#/news/page" 
+            img.post-img alt="alt" ng-src="{{oneNews.img}}" style="display:block" 
+          i.time  
+            = "{{oneNews.createdAt}}" 
+          a.post-title ng-href="#/news/page" 
+            = "{{ oneNews.title }}" 
+          .post-content  
+            = "{{ oneNews.content | limitTo: 100 }}{{oneNews.content.length > 20 ? '...' : ''}}"
+              
+  .row.pagination-box
+       .col-lg-3
+       .col-lg-6
+         .pagination ng-show="news.length > pageSize"
+           .pagination-control
+             .page-controls-back ng-click="curPage = curPage-1" ng-disabled="curPage == 0"
+               .page-controls-arrow
+               .page-controls-text
+                 = "назад"
+             .pagination-num ng-repeat="num in range(numberOfPages()) track by $index" ng-click="curPage = $index + 1"
+               = "{{ $index + 1 }}"
+             .page-controls-forward ng-click="curPage = curPage+1" ng-disabled="curPage >= news.length/pageSize - 1"
+               .page-controls-text
+                 = "вперед"
+               .page-controls-arrow
