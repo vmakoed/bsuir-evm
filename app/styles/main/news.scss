@@ -1,0 +1,54 @@
+@import '../colors';
+
+$banner-background-image: url(../../images/banner.jpg);
+$news-image-height: 250px;
+$news-item-padding: 10px;
+$item-vertical-padding: 15px;
+
+.news {
+  background-color: $theme-color-bg-grey;
+
+  .news-column {
+    &:first-child {
+      padding-right: 30px;
+    }
+
+    &:last-child {
+      padding-left: 30px;
+    }
+  }
+
+  .news-item-card {
+    padding: $item-vertical-padding 0 $item-vertical-padding 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .news-item-image {
+    background: $banner-background-image;
+    background-size: cover;
+    height: $news-image-height;
+  }
+
+  .news-item-date {
+    padding: $news-item-padding 0;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .news-item-title {
+    padding: $news-item-padding 0;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .news-item-lead {
+    padding: $news-item-padding 0;
+  }
+}

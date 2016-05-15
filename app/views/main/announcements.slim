@@ -1,3 +1,10 @@
 .container
   .row
-    .pull-right ng-include="'views/main/sidebar.html'"
+    .col-md-8.announce-cards
+      .row
+        .section-title
+          span Объявления
+          .v-separator
+          a ng-href="#/" Все объявления
+      .row ng-include="'views/main/announcements/announce_cards.html'"
+    .col-md-4.sidebar ng-include="'views/main/announcements/sidebar.html'"

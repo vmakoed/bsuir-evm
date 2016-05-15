@@ -1,0 +1,44 @@
+$card-padding-vertical: 15px;
+$content-padding-top: 10px;
+$content-padding-horizontal: 20px;
+$content-padding-bottom: 30px;
+$date-padding: 10px;
+$date-font-size: 12px;
+$title-padding: 10px;
+$title-font-size: 16px;
+$lead-padding: 10px;
+
+.cards-column {
+  .announce-card {
+    padding: $card-padding-vertical 0 $card-padding-vertical 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    .announce-card-content {
+      background-color: #fff;
+      padding: $content-padding-top $content-padding-horizontal $content-padding-bottom $content-padding-horizontal;
+
+      .announce-card-date {
+        padding: $date-padding 0;
+        font-weight: bold;
+        font-size: $date-font-size;
+      }
+
+      .announce-card-title {
+        padding: $title-padding 0;
+        font-weight: bold;
+        font-size: $title-font-size;
+      }
+
+      .announce-card-lead {
+        padding: $lead-padding 0;
+      }
+    }
+  }
+}

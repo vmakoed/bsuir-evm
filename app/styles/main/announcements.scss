@@ -1,0 +1,34 @@
+@import '../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables';
+@import '../colors';
+
+@import 'announcements/sidebar';
+@import 'announcements/announce_card';
+
+$announcements-height: 960px;
+$announce-cards-width: 73.4%;
+$sidebar-width: 26.6%;
+
+$cards-column-right-padding: 30px;
+
+@media (min-width: $screen-md-min) {
+  .announcements {
+    height: $announcements-height;
+
+    .announce-cards {
+      width: $announce-cards-width;
+
+      .cards-column {
+        padding-left: 0;
+        padding-right: $cards-column-right-padding;
+      }
+    }
+
+    .sidebar {
+      width: $sidebar-width;
+    }
+  }
+}
+
+.announcements {
+  background-color: $theme-color-bg-grey;
+}

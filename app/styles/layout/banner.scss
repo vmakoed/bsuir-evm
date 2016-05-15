@@ -5,11 +5,11 @@ $banner-title-padding: $banner-title-font-size * 0.6;
 $banner-lead-font-size: 18px;
 $banner-lead-line-height: $banner-lead-font-size * 1.5;
 $banner-lead-padding: $banner-lead-font-size * 0.6;
-$banner-background-image: url(../images/banner.jpg);
+$banner-background-image: url(../../images/banner.jpg);
 $logo-width: 164px;
 $logo-height: 105px;
 $logo-vertical-margin: 30px;
-$logo-background-image: url(../images/evm-logo.png);
+$logo-background-image: url(../../images/evm-logo.png);
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), $banner-background-image;

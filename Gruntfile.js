@@ -166,6 +166,7 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
+          flatten: false,
           cwd: '.tmp/styles/',
           src: '{,*/}*.css',
           dest: '.tmp/styles/'
@@ -174,6 +175,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
+          flatten: false,
           cwd: '.tmp/styles/',
           src: '{,*/}*.css',
           dest: '.tmp/styles/'
@@ -216,14 +218,16 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
+          flatten: false,
           cwd: '<%= yeoman.app %>',
-          src: '{,*/}*.slim',
+          src: ['**/*.slim'],
           dest: '<%= yeoman.dist %>',
           ext: '.html'
         }, {
           expand: true,
+          flatten: false,
           cwd: '<%= yeoman.app %>/views',
-          src: '{,*/}*.slim',
+          src: ['**/*.slim'],
           dest: '<%= yeoman.dist %>/views',
           ext: '.html'
         }]
@@ -231,14 +235,16 @@ module.exports = function (grunt) {
       server: {
         files: [{
           expand: true,
+          flatten: false,
           cwd: '<%= yeoman.app %>',
-          src: '{,*/}*.slim',
+          src: ['**/*.slim'],
           dest: '.tmp',
           ext: '.html'
         }, {
           expand: true,
+          flatten: false,
           cwd: '<%= yeoman.app %>/views',
-          src: '{,*/}*.slim',
+          src: ['**/*.slim'],
           dest: '.tmp/views',
           ext: '.html'
         }]
@@ -254,6 +260,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
+          flatten: false,
           cwd: '<%= yeoman.app %>/scripts',
           src: '{,*/}*.coffee',
           dest: '.tmp/scripts',
@@ -263,6 +270,7 @@ module.exports = function (grunt) {
       test: {
         files: [{
           expand: true,
+          flatten: false,
           cwd: 'test/spec',
           src: '{,*/}*.coffee',
           dest: '.tmp/spec',
@@ -374,6 +382,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
+          flatten: false,
           cwd: '<%= yeoman.app %>/images',
           src: '{,*/}*.{png,jpg,jpeg,gif}',
           dest: '<%= yeoman.dist %>/images'
@@ -385,6 +394,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
+          flatten: false,
           cwd: '<%= yeoman.app %>/images',
           src: '{,*/}*.svg',
           dest: '<%= yeoman.dist %>/images'
@@ -416,6 +426,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
+          flatten: false,
           cwd: '.tmp/concat/scripts',
           src: '*.js',
           dest: '.tmp/concat/scripts'
@@ -435,6 +446,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
+          flatten: false,
           dot: true,
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
@@ -448,6 +460,7 @@ module.exports = function (grunt) {
           ]
         }, {
           expand: true,
+          flatten: false,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
@@ -455,6 +468,7 @@ module.exports = function (grunt) {
       },
       styles: {
         expand: true,
+        flatten: false,
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
